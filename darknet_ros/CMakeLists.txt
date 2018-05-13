@@ -20,7 +20,7 @@ if (CUDA_FOUND)
   set(
     CUDA_NVCC_FLAGS
     ${CUDA_NVCC_FLAGS};
-    -03 -gencode arch=compute_35,code=sm_35
+    -O3 -gencode arch=compute_35,code=sm_35
     #-O3
     #-gencode arch=compute_30,code=sm_30
     #-gencode arch=compute_35,code=sm_35
