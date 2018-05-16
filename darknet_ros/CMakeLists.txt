@@ -20,7 +20,7 @@ if (CUDA_FOUND)
   set(
     CUDA_NVCC_FLAGS
     ${CUDA_NVCC_FLAGS};
-    -03 -gencode arch=compute_35,code=sm_35
+    -gencode arch=compute_61,code=sm_61
   )
   add_definitions(-DGPU)
 else()
