@@ -165,6 +165,8 @@ void YoloObjectDetector::init()
   detectionImagePublisher_ = nodeHandle_.advertise<sensor_msgs::Image>(detectionImageTopicName,
                                                                        detectionImageQueueSize,
                                                                        detectionImageLatch);
+                                                        
+  detectFlagPublisher_ = nodeHandle_.advertise<std_msgs::Int8>("flag_detection", 1);
 
   // Action servers.
   std::string checkForObjectsActionName;
@@ -331,6 +333,12 @@ void *YoloObjectDetector::detectInThread()
 
   layer l = net_->layers[net_->n - 1];
   float *X = buffLetter_[(buffIndex_ + 2) % 3].data;
+
+  // Signal ROS before execuing detecton
+  std_msgs::Int8 msg;
+  msg.data = 0;
+  detectFlagPublisher_.publish(msg);
+
   float *prediction = network_predict(net_, X);
 
   rememberNetwork(net_);

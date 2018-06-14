@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/dhiego/catkin_ws/devel/include",
+                    "/opt/ros/kinetic/include",
+                    "/home/dhiego/catkin_ws/src/darknet_ros/darknet_ros/include",
+                    "/home/dhiego/catkin_ws/src/downsampling_publish/include",
+                    "/home/dhiego/catkin_ws/src/driver_common/driver_base/include",
+                    "/home/dhiego/catkin_ws/src/hokuyo_node/include",
+                    "/home/dhiego/catkin_ws/src/iai_kinect2/kinect2_bridge/include",
+                    "/home/dhiego/catkin_ws/src/iai_kinect2/kinect2_calibration/include",
+                    "/home/dhiego/catkin_ws/src/iai_kinect2/kinect2_registration/include",
+                    "/home/dhiego/catkin_ws/src/driver_common/timestamp_tools/include",
+                    "/usr/include"
+                ]
+            },
+            "includePath": [
+                "/home/dhiego/catkin_ws/devel/include",
+                "/opt/ros/kinetic/include",
+                "/home/dhiego/catkin_ws/src/darknet_ros/darknet_ros/include",
+                "/home/dhiego/catkin_ws/src/downsampling_publish/include",
+                "/home/dhiego/catkin_ws/src/driver_common/driver_base/include",
+                "/home/dhiego/catkin_ws/src/hokuyo_node/include",
+                "/home/dhiego/catkin_ws/src/iai_kinect2/kinect2_bridge/include",
+                "/home/dhiego/catkin_ws/src/iai_kinect2/kinect2_calibration/include",
+                "/home/dhiego/catkin_ws/src/iai_kinect2/kinect2_registration/include",
+                "/home/dhiego/catkin_ws/src/driver_common/timestamp_tools/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

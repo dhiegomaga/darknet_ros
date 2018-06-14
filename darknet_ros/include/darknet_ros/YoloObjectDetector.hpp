@@ -156,6 +156,7 @@ class YoloObjectDetector
 
   //! Publisher of the bounding box image.
   ros::Publisher detectionImagePublisher_;
+  ros::Publisher detectFlagPublisher_;
 
   // Yolo running on thread.
   std::thread yoloThread_;
