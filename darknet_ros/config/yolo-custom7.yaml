@@ -1,0 +1,17 @@
+yolo_model:
+
+  config_file:
+    name: yolo-custom7.cfg
+  weight_file:
+    name: yolo-custom7.weights
+  threshold:
+    value: 0.35
+  detection_classes:
+    names:
+      - door
+      - bench
+      - trash
+      - fire
+      - water
+      - cat
+      - person
