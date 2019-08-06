@@ -530,7 +530,8 @@ void YoloObjectDetector::yolo()
   }
 
   demoTime_ = what_time_is_it_now();
-
+  // Bound execution to specific rate 
+  ros::Rate loop_rate(10);
   while (!demoDone_) {
     buffIndex_ = (buffIndex_ + 1) % 3;
     fetch_thread = std::thread(&YoloObjectDetector::fetchInThread, this);
@@ -553,6 +554,7 @@ void YoloObjectDetector::yolo()
     if (!isNodeRunning()) {
       demoDone_ = true;
     }
+    //loop_rate.sleep();
   }
 
 }

@@ -1,15 +1,11 @@
 yolo_model:
 
   config_file:
-    name: yolo-custom5.cfg
+    name: yolo-custom-rtab.cfg
   weight_file:
-    name: yolo-custom5.weights
+    name: yolo-custom-rtab.weights
   threshold:
     value: 0.5
   detection_classes:
     names:
       - door
-      - bench
-      - trash
-      - fire
-      - water
